@@ -1,0 +1,14 @@
+.wrap-banner div h2{
+    color: #f6ffd9;
+    font-size: 32px;
+    letter-spacing: 4px;
+}
+.wrap-banner{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+   height:34vh;
+ background:url("./assets/MakeupArtist.jpg");
+ background-size:cover;
+  background-position:center;
+}
