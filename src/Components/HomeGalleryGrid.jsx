@@ -35,32 +35,32 @@ const HomeGalleryGrid = () => {
 
 <div className="gallery-div"> 
 
-    <div className="big"   ><img src={bridalS1}   alt="picsum"/></div>
+    <div className="big"   ><img src={bridalS1}    loading="lazy" alt="picsum"/></div>
 
-  <div    ><img src={bridalP7} alt="picsum"/></div>
-    <div    ><img src={moreS8}  alt="picsum"/></div>
-    <div  ><img src={bridalP8}   alt="picsum"/></div>
+  <div    ><img src={bridalP7}  loading="lazy" alt="picsum"/></div>
+    <div    ><img src={moreS8}   loading="lazy" alt="picsum"/></div>
+    <div  ><img src={bridalP8}    loading="lazy" alt="picsum"/></div>
 
-    <div className="wide"  ><img src={modelL2} alt="picsum"/></div>
+    <div className="wide"  ><img src={modelL2}  loading="lazy" alt="picsum"/></div>
 
-    <div  ><img src={celebrityP6}   alt="picsum"/></div>
-    <div className="tall"  ><img src={moreS7}   alt="picsum"/></div>
-    <div  ><img src={bridalS8}   alt="picsum"/></div>
-    <div className="tall"  ><img src={modelS7}  alt="picsum"/></div>
-    <div  ><img src={modelS8}   alt="picsum"/></div>
+    <div  ><img src={celebrityP6}    loading="lazy" alt="picsum"/></div>
+    <div className="tall"  ><img src={moreS7}    loading="lazy" alt="picsum"/></div>
+    <div  ><img src={bridalS8}    loading="lazy" alt="picsum"/></div>
+    <div className="tall"  ><img src={modelS7}   loading="lazy" alt="picsum"/></div>
+    <div  ><img src={modelS8}    loading="lazy" alt="picsum"/></div>
     
-    <div  ><img src={bridalP5}   alt="picsum"/></div>
+    <div  ><img src={bridalP5}    loading="lazy" alt="picsum"/></div>
 
-    <div  ><img src={bridalS6}   alt="picsum"/></div>
-    <div className="big"  ><img src={bridalS3} alt="picsum"/></div>
+    <div  ><img src={bridalS6}    loading="lazy" alt="picsum"/></div>
+    <div className="big"  ><img src={bridalS3}  loading="lazy" alt="picsum"/></div>
 
-    <div  ><img src={bridalS5}   alt="picsum"/></div>
-    <div  ><img src={bridalP6}   alt="picsum"/></div>
-    <div  ><img src={modelP1}   alt="picsum"/></div>
-    <div  ><img src={moreP1}   alt="picsum"/></div>
-    <div  ><img src={bridalS7}   alt="picsum"/></div>
-    <div className="wide"  ><img src={modelL1}   alt="picsum"/></div>
-    <div  ><img src={bridalP4}   alt="picsum"/></div>
+    <div  ><img src={bridalS5}    loading="lazy" alt="picsum"/></div>
+    <div  ><img src={bridalP6}    loading="lazy" alt="picsum"/></div>
+    <div  ><img src={modelP1}    loading="lazy" alt="picsum"/></div>
+    <div  ><img src={moreP1}    loading="lazy" alt="picsum"/></div>
+    <div  ><img src={bridalS7}    loading="lazy" alt="picsum"/></div>
+    <div className="wide"  ><img src={modelL1}    loading="lazy" alt="picsum"/></div>
+    <div  ><img src={bridalP4}    loading="lazy" alt="picsum"/></div>
 
     
   </div>
