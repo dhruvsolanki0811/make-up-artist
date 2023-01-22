@@ -1,7 +1,68 @@
-import React from 'react'
+import { addDoc,collection } from 'firebase/firestore'
+import React, { useState } from 'react'
+import { Alert } from 'react-bootstrap'
 import "../Contact.css"
+import {db} from "../firebaseConfig"
 const Contact = () => {
-
+	const [fname, setFname] = useState("")
+	const [lname, setLname] = useState("")
+	const [email, setEmail] = useState("")
+	const [phone, setPhone] = useState("")
+	const [message, setMessage] = useState("")
+	const [showStatus,setShowStaus]=useState(false)
+	const [showValidation,setShowValidation]=useState(false)
+	const [falsefield,setFalsefield]=useState("")
+	const userCollection=collection(db,"contactdata")
+	const getCurrentTime=()=>{
+		const date = new Date();
+		const time=date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate()+"-"+date.getHours() + ':' + date.getMinutes() + ":" + date.getSeconds();
+		return time
+	}
+	const handleSubmit=(e)=>{
+		e.preventDefault()
+		var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+		if(email===""){
+			setFalsefield("email");
+			setShowValidation(true)
+			return 
+		}
+		if(message===""){
+			setFalsefield("message");
+			setShowValidation(true)
+			return 
+		}
+		if(	phone===""){
+			setFalsefield("phone number");
+			setShowValidation(true)
+			return 
+		}
+		if(fname===""){
+			setFalsefield("first name");
+			setShowValidation(true)
+			return 
+		}
+		if(!email.match(mailformat)){
+			setFalsefield("valid email!")
+			setShowStaus(true)
+			return
+		}
+		addDoc(userCollection, {
+			firstname:fname,
+			lastname:lname,
+			email:email,
+			phone:phone,
+			message:message,
+			answered:false,
+			time:getCurrentTime()
+		}).then(()=>{setShowStaus(true)
+		setEmail("")
+		setFname("")
+		setMessage("")
+		setLname("")
+		setPhone("")
+		setShowValidation(false)
+		})
+	}
   return (
     <>
   
@@ -13,6 +74,7 @@ const Contact = () => {
 				<div className="textcenter">
 					<h1>Drop Us a Mail</h1>
 				</div>
+				
 			</section>
 		
 			<section className="section2 clearfix">
@@ -22,27 +84,33 @@ const Contact = () => {
 				<div className="col2 column2 last">
 					<div className="sec2innercont">
 						<div className="sec2addr">
-							<p>45 BC, a Latin professor at Hampden-Sydney College in Virginia</p>
-							<p><span className="collig">Phone :</span> +91 976885083</p>
-							<p><span className="collig">Email :</span> vivek.mengu016@gmail.com</p>
-							<p><span className="collig">Fax :</span> +91 9768850839</p>
+							<p></p>
+							<p><span className="collig">Phone :</span> +91 00000 00000</p>
+							<p><span className="collig">Email :</span> dummy@email.com</p>
 						</div>
 					</div>
 					<div className="sec2contactform">
 						<h3 className="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
+						{showStatus && (<Alert key="danger" variant="danger">
+					Successfully submitted.
+	        </Alert>)}
+			{showValidation && (<div style={{color:"red"}}>
+					Please enter a {falsefield}!
+	        </div>)}
 						<form action="">
 							<div className="clearfix">
-								<input className="col2 first" type="text" placeholder="FirstName"/>
-								<input className="col2 last" type="text" placeholder="LastName"/>
+								<input className="col2 first" type="text" required placeholder="FirstName" value={fname} onChange={(e)=>{setFname(e.target.value)}}/>
+								<input className="col2 last" type="text" placeholder="LastName" value={lname} onChange={(e)=>{setLname(e.target.value)}}/>
 							</div>
 							<div className="clearfix">
-								<input  className="col2 first" type="Email" placeholder="Email"/>
-								<input className="col2 last" type="text" placeholder="Contact Number"/>
+						
+								<input  className="col2 first" type="Email" required placeholder="Email" value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
+								<input className="col2 last" type="text" required placeholder="Contact Number" value={phone} onChange={(e)=>{setPhone(e.target.value)}}/>
 							</div>
 							<div className="clearfix">
-								<textarea name="textarea" id="" cols="30" rows="4" placeholder='write your message here'></textarea>
+								<textarea name="textarea" id="" cols="30" rows="4" required placeholder='write your message here' value={message} onChange={(e)=>{setMessage(e.target.value)}}></textarea>
 							</div>
-							<div className="clearfix"><input type="submit" value="Send"/></div>
+							<div className="clearfix"><input onClick={handleSubmit} type="submit" value="Send"/></div>
 						</form>
 					</div>
 

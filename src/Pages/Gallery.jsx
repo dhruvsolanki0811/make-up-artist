@@ -19,14 +19,14 @@ const Gallery = () => {
  </section>)
 }
 const getColumnsForRow =()=>{
-    let items = [{photo:bridal,name:"bridal"},{photo:Model,name:"model"},{photo:Celebrity,name:"celebrity"},{photo:press,name:"pressandpraise"},{photo:more,name:"more"}].map((arr,index) => {
+    let items = [{photo:bridal,name:"Bridal",link:"bridal"},{photo:Model,name:"Model",link:"model"},{photo:Celebrity,name:"Celebrity",link:"celebrity"},{photo:press,name:"Press and praise",link:"pressandpraise"},{photo:more,name:"More",link:"more"}].map((arr,index) => {
       return ( 
         <Col style={{ width: '30vH'}}>
 
         <Card key={index} style={{ width: '100%',justifyContent:"center" }} >
 
         <div className="image-gallery">
-        <Link to={`/gallery/${arr.name}`}>
+        <Link to={`/gallery/${arr.link}`}>
 
       <Card.Img style={{height:"37vH" } }variant="top" src={arr.photo} />
       <div className="overlay"></div>

@@ -2,6 +2,8 @@ import React from 'react';
 import { Container, Row, Col ,Button} from 'react-bootstrap';
 import { SocialIcon } from 'react-social-icons';
 import { HiPhone,HiEnvelope ,HiHome} from "react-icons/hi2";
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 
 
@@ -24,16 +26,14 @@ export default function FooterPage() {
       <SocialIcon style={{ height: 40, width: 40,marginLeft:30 }} url="https://pinterest.com/" />
       </section> */}
 
-      <section className=''>
-        <Container className='text-center text-md-start mt-5'>
-          <Row className='mt-3'>
-            <Col md="3" lg="4" xl="3" className='mx-auto mb-4'>
+      <section >
+        <Container className='mt-5'>
+                 <Row className='mt-3'>
+            <Col md="3" lg="4"  className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>
-                Company name
-              </h6>
+Artist</h6>
               <p>
-                Here you can use rows and columns to organize your div content. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit.
+               We ensure you look the best at your best. Connect with us on different platforms.
               </p>
             </Col>
 
@@ -61,41 +61,41 @@ export default function FooterPage() {
               </p>
             </Col> */}
 
-            <Col md="3" lg="2" xl="2" className='mx-auto mb-2'>
+            <Col md="2" lg="2" className='mx-auto mb-2'>
               <h6 className='text-uppercase fw-bold mb-3'>Useful links</h6>
               <p>
-                <a href='#!' className='text-reset'>
+                <Link to="/" className='text-reset'>
                   Home
-                </a>
+                </Link>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <HashLink to="/#whatwedo" className='text-reset'>
                   What we do
-                </a>
+                </HashLink>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <Link to="/gallery" className='text-reset'>
                   Gallery
-                </a>
+                </Link>
               </p>
               
             </Col>
-            <Col md="3" lg="2" xl="2" className='mx-auto mb-2'>
+            <Col md="3" lg="2"  className='mx-auto mb-2'>
               <h6 className='text-uppercase fw-bold mb-3'>Useful links</h6>
               
               <p>
-                <a href='#!' className='text-reset'>
+                <Link to="/aboutus" className='text-reset'>
                   About us
-                </a>
+                </Link>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <Link to="/contact" className='text-reset'>
                   Contact us
-                </a>
+                </Link>
               </p>
               </Col>
 
-            <Col md="4" lg="3" xl="2" className='mx-auto mb-md-0 mb-3'>
+            <Col md="4" lg="3"  className='mx-auto mb-md-0 mb-3'>
               <h6 className='text-uppercase fw-bold mb-3'>Contact</h6>
               <p>
                 {/* <Icon icon="home" className="me-2" /> */}
@@ -137,7 +137,7 @@ export default function FooterPage() {
       <SocialIcon style={{ height: 35, width: 35,marginLeft:30 }} url="https://twitter.com/" />
       <SocialIcon style={{ height: 35, width: 35 ,marginLeft:30}} url="https://instagram.com/" />
       <SocialIcon style={{ height: 35, width: 35,marginLeft:30 }}  url="https://facebook.com/" />
-      <SocialIcon style={{ height: 35, width: 35,marginLeft:30 }} url="https://pinterest.com/" />
+      <SocialIcon style={{ height: 35, width: 35,marginLeft:30 }} url="https://pinterest.com/DHRUV" />
       </Row>
       </>
 
