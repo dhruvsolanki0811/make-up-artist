@@ -22,6 +22,7 @@ import moreP1 from "../Gallery/More/potrait/albert-dera-ILip77SbmOE-unsplash.jpg
 import "../CategoryGallery.css"
 
 import {Link} from "react-router-dom"
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const HomeGalleryGrid = () => {
   
@@ -35,32 +36,32 @@ const HomeGalleryGrid = () => {
 
 <div className="gallery-div"> 
 
-    <div className="big"   ><img src={bridalS1}    loading="lazy" alt="picsum"/></div>
+    <div className="big"   ><LazyLoadImage src={bridalS1}    loading="lazy" alt="picsum"/></div>
 
-  <div    ><img src={bridalP7}  loading="lazy" alt="picsum"/></div>
-    <div    ><img src={moreS8}   loading="lazy" alt="picsum"/></div>
-    <div  ><img src={bridalP8}    loading="lazy" alt="picsum"/></div>
+  <div    ><LazyLoadImage src={bridalP7}  loading="lazy" alt="picsum"/></div>
+    <div    ><LazyLoadImage src={moreS8}   loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={bridalP8}    loading="lazy" alt="picsum"/></div>
 
-    <div className="wide"  ><img src={modelL2}  loading="lazy" alt="picsum"/></div>
+    <div className="wide"  ><LazyLoadImage src={modelL2}  loading="lazy" alt="picsum"/></div>
 
-    <div  ><img src={celebrityP6}    loading="lazy" alt="picsum"/></div>
-    <div className="tall"  ><img src={moreS7}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={bridalS8}    loading="lazy" alt="picsum"/></div>
-    <div className="tall"  ><img src={modelS7}   loading="lazy" alt="picsum"/></div>
-    <div  ><img src={modelS8}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={celebrityP6}    loading="lazy" alt="picsum"/></div>
+    <div className="tall"  ><LazyLoadImage src={moreS7}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={bridalS8}    loading="lazy" alt="picsum"/></div>
+    <div className="tall"  ><LazyLoadImage src={modelS7}   loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={modelS8}    loading="lazy" alt="picsum"/></div>
     
-    <div  ><img src={bridalP5}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={bridalP5}    loading="lazy" alt="picsum"/></div>
 
-    <div  ><img src={bridalS6}    loading="lazy" alt="picsum"/></div>
-    <div className="big"  ><img src={bridalS3}  loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={bridalS6}    loading="lazy" alt="picsum"/></div>
+    <div className="big"  ><LazyLoadImage src={bridalS3}  loading="lazy" alt="picsum"/></div>
 
-    <div  ><img src={bridalS5}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={bridalP6}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={modelP1}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={moreP1}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={bridalS7}    loading="lazy" alt="picsum"/></div>
-    <div className="wide"  ><img src={modelL1}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={bridalP4}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={bridalS5}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={bridalP6}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={modelP1}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={moreP1}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={bridalS7}    loading="lazy" alt="picsum"/></div>
+    <div className="wide"  ><LazyLoadImage src={modelL1}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={bridalP4}    loading="lazy" alt="picsum"/></div>
 
     
   </div>

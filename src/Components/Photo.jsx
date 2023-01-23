@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../CategoryGallery.css"
 import bridalL1 from "../Gallery/Bridal/landscape/alok-verma-jQ3UdoWiFis-unsplash.jpg"
 import bridalL2 from "../Gallery/Bridal/landscape/rajat-sarki-NvuOJFK53sE-unsplash.jpg"
@@ -86,36 +86,42 @@ import moreP5 from "../Gallery/More/potrait/mohamad-khosravi-5KyzZbonwqQ-unsplas
 import moreP6 from "../Gallery/More/potrait/oliver-ragfelt-khV4fTy6-D8-unsplash.jpg"
 import moreP7 from "../Gallery/More/potrait/taras-chernus--au3XMzfhro-unsplash.jpg"
 import moreP8 from "../Gallery/More/landscape/oleksii-berdnikov-EoM0DD8WgBk-unsplash.jpg"
+import { LazyLoadComponent, LazyLoadImage } from 'react-lazy-load-image-component'
 const Bridal = () => {
+
+  
+
+
+  
   return (
 <>
 <div className="gallery-div"> 
 
-    <div className="big"   ><img src={bridalS1}    loading="lazy" alt="picsum"/></div>
+    <div className="big"   ><LazyLoadImage src={bridalS1}     alt="picsum"/></div>
 
-  <div    ><img src={bridalS3 }  loading="lazy" alt="picsum"/></div>
-    <div    ><img src={bridalS4 }   loading="lazy" alt="picsum"/></div>
-    <div  ><img src={bridalS5 }    loading="lazy" alt="picsum"/></div>
-    <div className="wide"  ><img src={bridalL1}  loading="lazy" alt="picsum"/></div>
+  <div    ><LazyLoadImage src={bridalS3 }   alt="picsum"/></div>
+    <div    ><LazyLoadImage src={bridalS4 }    alt="picsum"/></div>
+    <div  ><LazyLoadImage src={bridalS5 }     alt="picsum"/></div>
+    <div className="wide"  ><LazyLoadImage src={bridalL1}   alt="picsum"/></div>
 
-    <div  ><img src={bridalS6  }    loading="lazy" alt="picsum"/></div>
-    <div className="tall"  ><img src={bridalS7}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={bridalS8}    loading="lazy" alt="picsum"/></div>
-    <div className="tall"  ><img src={bridalP1}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={bridalP2}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={bridalS6  }     alt="picsum"/></div>
+    <div className="tall"  ><LazyLoadImage src={bridalS7}     alt="picsum"/></div>
+    <div  ><LazyLoadImage src={bridalS8}     alt="picsum"/></div>
+    <div className="tall"  ><LazyLoadImage src={bridalP1}     alt="picsum"/></div>
+    <div  ><LazyLoadImage src={bridalP2}     alt="picsum"/></div>
     
-    <div  ><img src={bridalP3}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={bridalP3}     alt="picsum"/></div>
 
-    <div  ><img src={bridalP4}    loading="lazy" alt="picsum"/></div>
-    <div className="big"  ><img src={bridalS2}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={bridalP4}     alt="picsum"/></div>
+    <div className="big"  ><LazyLoadImage src={bridalS2}     alt="picsum"/></div>
 
-    <div  ><img src={bridalP5}   loading="lazy" alt="picsum"/></div>
-    <div  ><img src={bridalP6}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={bridalP7}    loading="lazy" alt="picsum"/></div>
-    <div className="wide"  ><img src={bridalL2}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={bridalP8}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={bridalP5}    alt="picsum"/></div>
+    <div  ><LazyLoadImage src={bridalP6}     alt="picsum"/></div>
+    <div  ><LazyLoadImage src={bridalP7}     alt="picsum"/></div>
+    <div className="wide"  ><LazyLoadImage src={bridalL2}     alt="picsum"/></div>
+    <div  ><LazyLoadImage src={bridalP8}     alt="picsum"/></div>
 
-    <div    ><img src={bridalS3 }  loading="lazy" alt="picsum"/></div>
+    <div    ><LazyLoadImage src={bridalS3 }   alt="picsum"/></div>
 
   </div>
 </>  )
@@ -128,31 +134,31 @@ const Model = () => {
 <>
 <div className="gallery-div"> 
 
-    <div className="big"   ><img src={modelS1}    loading="lazy" alt="picsum"/></div>
+    <div className="big"   ><LazyLoadImage src={modelS1}     alt="picsum"/></div>
 
-  <div    ><img src={modelS3 }  loading="lazy" alt="picsum"/></div>
-    <div    ><img src={modelS4 }   loading="lazy" alt="picsum"/></div>
-    <div  ><img src={modelS5 }    loading="lazy" alt="picsum"/></div>
-    <div className="wide"  ><img src={modelL1}  loading="lazy" alt="picsum"/></div>
+  <div    ><LazyLoadImage src={modelS3 }   alt="picsum"/></div>
+    <div    ><LazyLoadImage src={modelS4 }    alt="picsum"/></div>
+    <div  ><LazyLoadImage src={modelS5 }     alt="picsum"/></div>
+    <div className="wide"  ><LazyLoadImage src={modelL1}   alt="picsum"/></div>
 
-    <div  ><img src={modelS6  }    loading="lazy" alt="picsum"/></div>
-    <div className="tall"  ><img src={modelS7}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={modelS8}    loading="lazy" alt="picsum"/></div>
-    <div className="tall"  ><img src={modelP1}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={modelP2}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={modelS6  }     alt="picsum"/></div>
+    <div className="tall"  ><LazyLoadImage src={modelS7}     alt="picsum"/></div>
+    <div  ><LazyLoadImage src={modelS8}     alt="picsum"/></div>
+    <div className="tall"  ><LazyLoadImage src={modelP1}     alt="picsum"/></div>
+    <div  ><LazyLoadImage src={modelP2}     alt="picsum"/></div>
     
-    <div  ><img src={modelP3}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={modelP3}     alt="picsum"/></div>
 
-    <div  ><img src={modelP4}    loading="lazy" alt="picsum"/></div>
-    <div className="big"  ><img src={modelS2}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={modelP4}     alt="picsum"/></div>
+    <div className="big"  ><LazyLoadImage src={modelS2}     alt="picsum"/></div>
 
-    <div  ><img src={modelP5}   loading="lazy" alt="picsum"/></div>
-    <div  ><img src={modelP6}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={modelP7}    loading="lazy" alt="picsum"/></div>
-    <div className="wide"  ><img src={modelL2}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={modelP8}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={modelP5}    alt="picsum"/></div>
+    <div  ><LazyLoadImage src={modelP6}     alt="picsum"/></div>
+    <div  ><LazyLoadImage src={modelP7}     alt="picsum"/></div>
+    <div className="wide"  ><LazyLoadImage src={modelL2}     alt="picsum"/></div>
+    <div  ><LazyLoadImage src={modelP8}     alt="picsum"/></div>
 
-    <div    ><img src={modelS7 }  loading="lazy" alt="picsum"/></div>
+    <div    ><LazyLoadImage src={modelS7 }   alt="picsum"/></div>
 
   </div>
 </>  )
@@ -164,31 +170,31 @@ const Celebrity = () => {
 <>
 <div className="gallery-div"> 
 
-    <div className="big"   ><img src={celebrityS1}    loading="lazy" alt="picsum"/></div>
+    <div className="big"   ><LazyLoadImage src={celebrityS1}     alt="picsum"/></div>
 
-  <div    ><img src={celebrityS3 }  loading="lazy" alt="picsum"/></div>
-    <div    ><img src={celebrityS4 }   loading="lazy" alt="picsum"/></div>
-    <div  ><img src={celebrityS5 }    loading="lazy" alt="picsum"/></div>
-    <div className="wide"  ><img src={celebrityL1}  loading="lazy" alt="picsum"/></div>
+  <div    ><LazyLoadImage src={celebrityS3 }   alt="picsum"/></div>
+    <div    ><LazyLoadImage src={celebrityS4 }    alt="picsum"/></div>
+    <div  ><LazyLoadImage src={celebrityS5 }     alt="picsum"/></div>
+    <div className="wide"  ><LazyLoadImage src={celebrityL1}   alt="picsum"/></div>
 
-    <div  ><img src={celebrityS6  }    loading="lazy" alt="picsum"/></div>
-    <div className="tall"  ><img src={celebrityS7}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={celebrityS8}    loading="lazy" alt="picsum"/></div>
-    <div className="tall"  ><img src={celebrityP1}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={celebrityP2}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={celebrityS6  }     alt="picsum"/></div>
+    <div className="tall"  ><LazyLoadImage src={celebrityS7}     alt="picsum"/></div>
+    <div  ><LazyLoadImage src={celebrityS8}     alt="picsum"/></div>
+    <div className="tall"  ><LazyLoadImage src={celebrityP1}     alt="picsum"/></div>
+    <div  ><LazyLoadImage src={celebrityP2}     alt="picsum"/></div>
     
-    <div  ><img src={celebrityP3}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={celebrityP3}     alt="picsum"/></div>
 
-    <div  ><img src={celebrityP4}    loading="lazy" alt="picsum"/></div>
-    <div className="big"  ><img src={celebrityS2}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={celebrityP4}     alt="picsum"/></div>
+    <div className="big"  ><LazyLoadImage src={celebrityS2}     alt="picsum"/></div>
 
-    <div  ><img src={celebrityP5}   loading="lazy" alt="picsum"/></div>
-    <div  ><img src={celebrityP6}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={celebrityP7}    loading="lazy" alt="picsum"/></div>
-    <div className="wide"  ><img src={celebrityL2}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={celebrityP8}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={celebrityP5}    alt="picsum"/></div>
+    <div  ><LazyLoadImage src={celebrityP6}     alt="picsum"/></div>
+    <div  ><LazyLoadImage src={celebrityP7}     alt="picsum"/></div>
+    <div className="wide"  ><LazyLoadImage src={celebrityL2}     alt="picsum"/></div>
+    <div  ><LazyLoadImage src={celebrityP8}     alt="picsum"/></div>
 
-    <div    ><img src={celebrityS7 }  loading="lazy" alt="picsum"/></div>
+    <div    ><LazyLoadImage src={celebrityS7 }   alt="picsum"/></div>
 
   </div>
 </>  )
@@ -199,18 +205,18 @@ const PressandPraise = () => {
 <>
 <div className="gallery-div"> 
 
-    <div className="big"   ><img src={pandpS1}    loading="lazy" alt="picsum"/></div>
+    <div className="big"   ><LazyLoadImage src={pandpS1}     alt="picsum"/></div>
 
-  <div    ><img src={pandpS3 }  loading="lazy" alt="picsum"/></div>
-    <div    ><img src={pandpS4 }   loading="lazy" alt="picsum"/></div>
-    <div  ><img src={pandpS5 }    loading="lazy" alt="picsum"/></div>
-    <div className="wide"  ><img src={pandpL1}  loading="lazy" alt="picsum"/></div>
+  <div    ><LazyLoadImage src={pandpS3 }   alt="picsum"/></div>
+    <div    ><LazyLoadImage src={pandpS4 }    alt="picsum"/></div>
+    <div  ><LazyLoadImage src={pandpS5 }     alt="picsum"/></div>
+    <div className="wide"  ><LazyLoadImage src={pandpL1}   alt="picsum"/></div>
 
-    <div  ><img src={pandpS6  }    loading="lazy" alt="picsum"/></div>
-    <div className="tall"  ><img src={pandpS7}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={pandpS8}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={pandpS6  }     alt="picsum"/></div>
+    <div className="tall"  ><LazyLoadImage src={pandpS7}     alt="picsum"/></div>
+    <div  ><LazyLoadImage src={pandpS8}     alt="picsum"/></div>
 
-    <div className="wide"  ><img src={pandpL2}    loading="lazy" alt="picsum"/></div>
+    <div className="wide"  ><LazyLoadImage src={pandpL2}     alt="picsum"/></div>
 
 
   </div>
@@ -223,31 +229,31 @@ const More = () => {
 <>
 <div className="gallery-div"> 
 
-    <div className="big"   ><img src={moreS1}    loading="lazy" alt="picsum"/></div>
+    <div className="big"   ><LazyLoadImage src={moreS1}     alt="picsum"/></div>
 
-  <div    ><img src={moreS3 }  loading="lazy" alt="picsum"/></div>
-    <div    ><img src={moreS4 }   loading="lazy" alt="picsum"/></div>
-    <div  ><img src={moreS5 }    loading="lazy" alt="picsum"/></div>
-    <div className="wide"  ><img src={moreL1}  loading="lazy" alt="picsum"/></div>
+  <div    ><LazyLoadImage src={moreS3 }   alt="picsum"/></div>
+    <div    ><LazyLoadImage src={moreS4 }    alt="picsum"/></div>
+    <div  ><LazyLoadImage src={moreS5 }     alt="picsum"/></div>
+    <div className="wide"  ><LazyLoadImage src={moreL1}   alt="picsum"/></div>
 
-    <div  ><img src={moreS6  }    loading="lazy" alt="picsum"/></div>
-    <div className="tall"  ><img src={moreS7}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={moreS8}    loading="lazy" alt="picsum"/></div>
-    <div className="tall"  ><img src={moreP1}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={moreP2}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={moreS6  }     alt="picsum"/></div>
+    <div className="tall"  ><LazyLoadImage src={moreS7}     alt="picsum"/></div>
+    <div  ><LazyLoadImage src={moreS8}     alt="picsum"/></div>
+    <div className="tall"  ><LazyLoadImage src={moreP1}     alt="picsum"/></div>
+    <div  ><LazyLoadImage src={moreP2}     alt="picsum"/></div>
     
-    <div  ><img src={moreP3}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={moreP3}     alt="picsum"/></div>
 
-    <div  ><img src={moreP4}    loading="lazy" alt="picsum"/></div>
-    <div className="big"  ><img src={moreS2}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={moreP4}     alt="picsum"/></div>
+    <div className="big"  ><LazyLoadImage src={moreS2}     alt="picsum"/></div>
 
-    <div  ><img src={moreP5}   loading="lazy" alt="picsum"/></div>
-    <div  ><img src={moreP6}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={moreP7}    loading="lazy" alt="picsum"/></div>
-    <div className="wide"  ><img src={moreL2}    loading="lazy" alt="picsum"/></div>
-    <div  ><img src={moreP8}    loading="lazy" alt="picsum"/></div>
+    <div  ><LazyLoadImage src={moreP5}    alt="picsum"/></div>
+    <div  ><LazyLoadImage src={moreP6}     alt="picsum"/></div>
+    <div  ><LazyLoadImage src={moreP7}     alt="picsum"/></div>
+    <div className="wide"  ><LazyLoadImage src={moreL2}     alt="picsum"/></div>
+    <div  ><LazyLoadImage src={moreP8}     alt="picsum"/></div>
 
-    <div    ><img src={moreS7 }  loading="lazy" alt="picsum"/></div>
+    <div    ><LazyLoadImage src={moreS7 }   alt="picsum"/></div>
 
   </div>
 </>  )
