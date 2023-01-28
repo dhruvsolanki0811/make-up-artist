@@ -9,7 +9,7 @@ import bridalP4 from "../Gallery/Bridal/potrait/dhiren-maru-i7zfFnsIBhI-unsplash
 import bridalP5 from "../Gallery/Bridal/potrait/dollar-gill-2hprQNyWkvY-unsplash.jpg"
 import bridalP6 from "../Gallery/Bridal/potrait/dollar-gill-vZUveRc8Vqk-unsplash.jpg"
 import bridalP7 from "../Gallery/Bridal/potrait/mohit-maru-x9KgVjd3AVA-unsplash.jpg"
-import bridalP8 from "../Gallery/Bridal/potrait/photo-1610173827043-9db50e0d8ef9.jfif"
+// import bridalP8 from "../Gallery/Bridal/potrait/photo-1610173827043-9db50e0d8ef9.jfif"
 import modelL1 from "../Gallery/Model/landscape/shubham-patel-7O1VG7O_SB4-unsplash.jpg"
 import modelL2 from "../Gallery/Model/landscape/matheus-ferrero-4QotHf68gSg-unsplash.jpg"
 import modelS7 from "../Gallery/Model/square/seth-doyle-hF2XIzJimtM-unsplash.jpg"
@@ -40,7 +40,7 @@ const HomeGalleryGrid = () => {
 
   <div    ><LazyLoadImage src={bridalP7}  loading="lazy" alt="picsum"/></div>
     <div    ><LazyLoadImage src={moreS8}   loading="lazy" alt="picsum"/></div>
-    <div  ><LazyLoadImage src={bridalP8}    loading="lazy" alt="picsum"/></div>
+    {/* <div  ><LazyLoadImage src={bridalP8}    loading="lazy" alt="picsum"/></div> */}
 
     <div className="wide"  ><LazyLoadImage src={modelL2}  loading="lazy" alt="picsum"/></div>
 
