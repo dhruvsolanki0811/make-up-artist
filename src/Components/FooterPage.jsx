@@ -137,7 +137,7 @@ Artist</h6>
       <SocialIcon style={{ height: 35, width: 35,marginLeft:30 }} url="https://twitter.com/" />
       <SocialIcon style={{ height: 35, width: 35 ,marginLeft:30}} url="https://instagram.com/" />
       <SocialIcon style={{ height: 35, width: 35,marginLeft:30 }}  url="https://facebook.com/" />
-      <SocialIcon style={{ height: 35, width: 35,marginLeft:30 }} url="https://pinterest.com/DHRUV" />
+      <SocialIcon style={{ height: 35, width: 35,marginLeft:30 }} url="https://pinterest.com/" />
       </Row>
       </>
 
