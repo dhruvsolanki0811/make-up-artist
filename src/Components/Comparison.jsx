@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react'
 import before from "../assets/before1.jpg"
 import after from "../assets/After.jpg"
-import { Container } from 'react-bootstrap';
-import "../Comparison.css"
+import "../Styling/Comparison.css"
 
 import { MdCompareArrows } from "react-icons/md";
 
@@ -58,9 +57,9 @@ const Comparison = () => {
           slider.removeEventListener('touchmove', handleResize);
           slider.removeEventListener('mouseup', handleResizeEnd);
           slider.removeEventListener('touchend', handleResizeEnd);
-          slider.removeEventListener('keyup', onkeydown);
+          // slider.removeEventListener('keyup', onkeydown);
         }
-      }, [isResizing, handleResize, handleResizeEnd, onkeydown]);
+      }, [isResizing, handleResize, handleResizeEnd]);
 
      
       // Set initial positioning on component mount
@@ -70,18 +69,12 @@ useEffect(() => {
   
     setPositioning((width / 2 + left) - (handleWidth / 2));
   }, [setPositioning]);
-  const title = {
-    color: "rgb(252 151 172)",
-    paddingTop: "20px",
-  };
+
  
 return (
 
     <>
-        <center className="pb-3">
-      <h2 style={title}></h2>
-
-      </center>
+       
 
     <div className="comparison-slider" ref={ComparisonSlider}>
     <div ref={handleRef} className="handle"

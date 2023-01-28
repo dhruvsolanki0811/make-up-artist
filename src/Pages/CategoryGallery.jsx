@@ -1,14 +1,10 @@
-import React, { useState } from 'react'
-import { Breadcrumb, Container } from 'react-bootstrap'
-import "../CategoryGallery.css"
+import React from 'react'
+import "../Styling/CategoryGallery.css"
 import { Link } from "react-router-dom";
-import before from "../assets/before.jpg"
 import { Bridal, Celebrity, Model, More, PressandPraise } from '../Components/Photo';
 
 const CategoryGallery = ({category}) => {
 
-  const [imageToShow, setImageToShow] = useState("");
-  const [lightboxDisplay, setLightBoxDisplay] = useState(false);
 const categoryFunc=()=>{
   if(category==="Bridal"){
     return (<Bridal/>)
@@ -27,15 +23,7 @@ const categoryFunc=()=>{
     return (<More/>)
   }
 }
-const showImage = (image) => {
-    setImageToShow(image);
-    setLightBoxDisplay(true);
-  };
 
-  //hide lightbox
-  const hideLightBox = () => {
-    setLightBoxDisplay(false);
-  };
 const buttonStyle={
   width: "100px",
   height: "35px",

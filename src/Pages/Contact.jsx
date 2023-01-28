@@ -1,7 +1,7 @@
 import { addDoc,collection } from 'firebase/firestore'
 import React, { useState } from 'react'
 import { Alert } from 'react-bootstrap'
-import "../Contact.css"
+import "../Styling/Contact.css"
 import {db} from "../firebaseConfig"
 const Contact = () => {
 	const [fname, setFname] = useState("")
@@ -72,7 +72,7 @@ const Contact = () => {
 		
 			<section className="section1 clearfix">
 				<div className="textcenter">
-					<h1>Drop Us a Mail</h1>
+					<h1 style={{fontFamily: 'Playfair Display, serif'}}>Drop Us a Mail</h1>
 				</div>
 				
 			</section>
@@ -85,12 +85,12 @@ const Contact = () => {
 					<div className="sec2innercont">
 						<div className="sec2addr">
 							<p></p>
-							<p><span className="collig">Phone :</span> +91 00000 00000</p>
-							<p><span className="collig">Email :</span> dummy@email.com</p>
+							<p  style={{fontFamily: 'Barlow condense, sans-serif'}} ><span className="collig">Phone :</span> +91 00000 00000</p>
+							<p style={{fontFamily: 'Barlow condense, sans-serif'}}><span className="collig">Email :</span> dummy@email.com</p>
 						</div>
 					</div>
 					<div className="sec2contactform">
-						<h3 className="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
+						<h3 className="sec2frmtitle" style={{fontFamily: 'Playfair Display, serif'}}>Want to Know More?? Drop Us a Mail</h3>
 						{showStatus && (<Alert key="danger" variant="danger">
 					Successfully submitted.
 	        </Alert>)}

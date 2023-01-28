@@ -19,9 +19,8 @@ import celebrityP6 from "../Gallery/Celebrity/potrait/radu-florin-5QUdx2QujlU-un
 import moreS7 from "../Gallery/More/square/seth-doyle-vmBik4xv27s-unsplash.jpg"
 import moreS8 from "../Gallery/More/square/alexander-hipp-iEEBWgY_6lA-unsplash.jpg"
 import moreP1 from "../Gallery/More/potrait/albert-dera-ILip77SbmOE-unsplash.jpg"
-import "../CategoryGallery.css"
+import "../Styling/CategoryGallery.css"
 
-import {Link} from "react-router-dom"
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const HomeGalleryGrid = () => {

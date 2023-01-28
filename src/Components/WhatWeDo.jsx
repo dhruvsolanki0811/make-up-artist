@@ -1,5 +1,5 @@
 import React,{useState,useEffect,} from 'react'
-import "../WhatWeDo.css"
+import "../Styling/WhatWeDo.css"
 import portfolio from "../assets/portfolio.jpg";
 import bridal from "../assets/BrideWhatwedo.jpg";
 import prewedding from "../assets/prewedding.jpg";
@@ -30,6 +30,9 @@ const contentArray = [
 const WhatWeDo = () => 
 {
    const title= {color: "rgb(252 151 172)",
+   color: "hsl(240, 38%, 20%)",
+   fontFamily: 'Playfair Display, serif',
+   fontSize:'5.3vH'
   };
   const [id, setId] = useState(0)
 
@@ -69,9 +72,9 @@ const WhatWeDo = () =>
 
     <section className="container pt-5">
     <article className="WhatWeDo-section">
-    <div className="container-text"> <p>{contentArray[id].name} </p>
+    <div className="container-text" > <p style={{fontFamily: 'Playfair Display, serif',fontSize:"4vH"}}>{contentArray[id].name} </p>
                 </div>
-                <p>{
+                <p style={{fontFamily: 'Barlow Condensed, sans-serif',fontSize:"4vH",paddingTop:"1vH"}}>{
                     contentArray[id].paragraph
                 }
                 </p>

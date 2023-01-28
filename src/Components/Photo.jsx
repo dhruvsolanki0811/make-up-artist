@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-import "../CategoryGallery.css"
+import React from 'react'
+import "../Styling/CategoryGallery.css"
 import bridalL1 from "../Gallery/Bridal/landscape/alok-verma-jQ3UdoWiFis-unsplash.jpg"
 import bridalL2 from "../Gallery/Bridal/landscape/rajat-sarki-NvuOJFK53sE-unsplash.jpg"
 import bridalS1 from "../Gallery/Bridal/square/alok-verma-ohENjR9w0bk-unsplash.jpg"
@@ -60,7 +60,6 @@ import celebrityP8 from "../Gallery/Celebrity/potrait/kareya-saleh-tLKOj6cNwe0-u
 import pandpL1 from "../Gallery/Press and Praise/landscape/annie-spratt-hWJsOnaWTqs-unsplash.jpg"
 import pandpL2 from "../Gallery/Press and Praise/landscape/ashni-ePWaAwUn80k-unsplash.jpg"
 import pandpS1 from "../Gallery/Press and Praise/square/ashni-Wh9ZC4727e4-unsplash.jpg"
-import pandpS2 from "../Gallery/Press and Praise/square/bob-coyne-2199hbtQQVw-unsplash.jpg"
 import pandpS3 from "../Gallery/Press and Praise/square/charlesdeluvio-FdDkfYFHqe4-unsplash.jpg"
 import pandpS4 from "../Gallery/Press and Praise/square/giorgio-trovato-q_622B22t7I-unsplash.jpg"
 import pandpS5 from "../Gallery/Press and Praise/square/hatice-yardim-alXkKDNFavo-unsplash.jpg"
@@ -86,7 +85,7 @@ import moreP5 from "../Gallery/More/potrait/mohamad-khosravi-5KyzZbonwqQ-unsplas
 import moreP6 from "../Gallery/More/potrait/oliver-ragfelt-khV4fTy6-D8-unsplash.jpg"
 import moreP7 from "../Gallery/More/potrait/taras-chernus--au3XMzfhro-unsplash.jpg"
 import moreP8 from "../Gallery/More/landscape/oleksii-berdnikov-EoM0DD8WgBk-unsplash.jpg"
-import { LazyLoadComponent, LazyLoadImage } from 'react-lazy-load-image-component'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 const Bridal = () => {
 
   

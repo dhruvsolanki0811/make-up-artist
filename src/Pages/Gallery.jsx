@@ -1,6 +1,5 @@
 import React from 'react'
 import { Row,Col,Card, Container } from 'react-bootstrap'
-import test from "../assets/gold.jpg"
 import bridal from "../assets/bridal.jpg"
 import Model from "../assets/Model.jpg"
 import Celebrity from "../assets/Celebrity.jpg"
@@ -38,7 +37,7 @@ const getColumnsForRow =()=>{
     
     
     }}>
-      <small>  {arr.name}</small>
+      <small style={{color: "black",  fontFamily: 'Playfair Display,serif',fontSize:'2vH'}}>  {arr.name}</small>
         </Card.Footer>
 
     </Card>

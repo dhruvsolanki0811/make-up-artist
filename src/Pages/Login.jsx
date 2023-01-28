@@ -31,7 +31,7 @@ import { auth } from '../firebaseConfig';
     <>
             <div className="vh-50 d-flex justify-content-center align-items-center ">
             <div className="col-md-4 p-5 shadow-sm border rounded-1 border- bg-white">
-                <h2 className="text-center mb-4 text-primary">Login Form</h2>
+                <h2 className="text-center mb-4 text-primary" style={{fontFamily: 'Playfair Display, serif'}}>Login Form</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-3">
                         <label  className="form-label">Email address</label>

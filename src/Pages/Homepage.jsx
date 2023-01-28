@@ -13,7 +13,9 @@ function Homepage() {
     color: "white",
     textAlign: "center",
     lineHeight: "20px",
-    border:"none"
+    border:"none",
+    fontFamily: 'Playfair Display, serif',
+    fontSize:"2.2vH"
   }
 
   return (
@@ -27,8 +29,8 @@ function Homepage() {
         <div className="wrapper">
           <div className="inner">
             <div className="content">
-              <h5>Expert in Makeover & Wellness</h5>
-              <h2>Artist</h2>
+              <h5 style={{fontFamily: 'Playfair Display, serif', color: "hsl(240, 38%, 20%)"}}>Expert in Makeover & Wellness</h5>
+              <h2 style={{fontFamily: 'Playfair Display, serif',color: "hsl(240, 38%, 20%)"}}>Artist</h2>
               <Link to="/gallery"><Button style={buttonStyle} className="text-decoration-none text-white" >Explore</Button></Link> 
               </div>
         </div>

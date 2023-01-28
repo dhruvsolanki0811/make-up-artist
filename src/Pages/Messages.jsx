@@ -2,22 +2,20 @@ import React, { useContext, useEffect, useState } from 'react'
 import { signOut } from "firebase/auth";
 import { AuthContext } from "../Context/AuthContext";
 import { useNavigate } from "react-router-dom";
-import { ref, onValue } from "firebase/database";
-import { udb,auth, db } from '../firebaseConfig'
+import { auth, db } from '../firebaseConfig'
 import { collection, getDocs, query, where ,doc,updateDoc} from "firebase/firestore";
-import "../message.css" 
-import { Button, Table } from 'react-bootstrap';
-import Badge from 'react-bootstrap/Badge';
+import "../Styling/message.css" 
 import ListGroup from 'react-bootstrap/ListGroup';
 import { AiOutlineCheck } from "react-icons/ai";
 
 const Messages = () => {
     const { currentUser } = useContext(AuthContext);
-    const [username, setUsername] = useState("");
 
     const navigate = useNavigate();
     const [info , setInfo] = useState([]);
     const title= {color: "rgb(252 151 172)",
+    fontFamily: 'Playfair Display, serif',
+    
   };
   const buttonStyle={
     width: "100px",
@@ -44,7 +42,7 @@ const Messages = () => {
         Fetchdata().then((data)=>{ 
           setInfo(data)})
         }
-      },[]);
+      },[currentUser]);
     
       const clickLogin = () => {
         if (currentUser) {
@@ -148,15 +146,6 @@ Phone:
   )
 }
 
-      {/* {currentUser && info.map((data) =>{return (<>
-        <p>{data.message}</p>
-        <p>{data.email}</p>
-        <p>{data.firstName}</p>
-        <p>{data.lastName}</p>
-        <p>{data.phone}</p>
-        <p>{data.time}</p>
-
-        </>)})} */}
 
 
 
