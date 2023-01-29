@@ -6,6 +6,7 @@ import Footerpage from "./Components/FooterPage";
 
 
 import CustomRoutes from "./CustomRoutes";
+import SecondFooter from "./Components/SecondFooter";
 
 
 function App() {
@@ -16,9 +17,9 @@ function App() {
       <Container fluid>
         {/* {window.location.pathname === "/" ? null : } */}
         <CustomRoutes/>
-        <Footerpage/>
+        {/* <Footerpage/> */}
         
-
+      <SecondFooter/>
       </Container>
     </>
   );

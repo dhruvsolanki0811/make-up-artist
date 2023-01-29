@@ -12,10 +12,11 @@ function Homepage() {
     backgroundColor: "rgb(252 151 172)",
     color: "white",
     textAlign: "center",
+    
     lineHeight: "20px",
     border:"none",
     fontFamily: 'Playfair Display, serif',
-    fontSize:"2.2vH"
+    // fontSize:"2.2vH"
   }
 
   return (
